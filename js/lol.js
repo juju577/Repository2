@@ -4,7 +4,12 @@ $(document).ready(function(){
             $(".optionName").popover({ trigger: "hover" });
 
         });
-        $("#button").click(function(){
+        $(function() {
+            var toc = $("#toc2").tocify({ selectors: "h2, h3, h4", extendPage:false}).data("toc-tocify");
+            $(".optionName").popover({ trigger: "hover" });
+            $("#toc2").hide()
+        });
+        $("#button").one("click", function(){
          $('#toc').each(function () {
     var mylist = $(this);
     var listitems = mylist.children('li').get();
@@ -15,5 +20,10 @@ $(document).ready(function(){
 });
 $.each(listitems, function(idx, itm) { mylist.append(itm); });
 });
+  $("#button").click(function(){
+  $("#toc").toggle(); 
+  $("#toc2").toggle();   
+});
+  
 });
 });
