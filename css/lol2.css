@@ -4,3 +4,28 @@
 	height: 20px;
 	border:1px solid blue;
 }
+
+#one {
+width: 175px;
+height:26px;
+text-align: center;
+color: #0088cc;
+position: relative;
+}
+
+#two {
+width: 175px;
+height:26px;
+text-align: center;
+color: #0088cc;
+position: relative;
+}
+
+.hightlight{
+	background-color: #eeeeee;
+	border-radius: 2px;
+}
+
+.plus-minus-button {
+	width: 100px
+}
