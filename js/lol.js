@@ -60,7 +60,14 @@ $(document).ready(function () {
         $("#two").removeClass("hightlight")
     });
     $(".plus-minus-button").click(function () {
-        $(this).next()
-                 .toggle("hide")
+        var x=$(this).next();
+           if (x.is("a")) { 
+              $(this).next()
+                      .next()
+                      .toggle('hide')    
+           } else {
+              $(this).next()
+                      .toggle('hide')
+           }
     });
 });
