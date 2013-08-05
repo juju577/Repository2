@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     });
     $("ul li").has("ul li")
-        .prepend('<div class="plus-minus-button">ololo</div>')
+        .prepend('<i class="icon-collapse"></i>')
     $("#one").click(function () {
         $("ul li ul").hide("hide");
     });
@@ -59,15 +59,24 @@ $(document).ready(function () {
     $("#two").mouseleave(function () {
         $("#two").removeClass("hightlight")
     });
-    $(".plus-minus-button").click(function () {
-        var x=$(this).next();
-           if (x.is("a")) { 
-              $(this).next()
-                      .next()
-                      .toggle('hide')    
-           } else {
-              $(this).next()
-                      .toggle('hide')
-           }
+    $(".icon-collapse").click(function () {
+        var x = $(this).next();
+        if (x.is("a")) {
+            $(this).next()
+                .next()
+                .toggle()
+        } else {
+            $(this).next()
+                .toggle()}
+    });
+    $(".icon-collapse").click(function(){
+       if ($(this).siblings('a').is('a',':visible')) {
+          $(this).css('color','green')
+          console.log($(this).next().is("a"))
+       } else  if ($(this).siblings().is(':visible')){
+          $(this).css('color','blue')
+       } else {
+        $(this).css('color','red')
+       }
     });
 });

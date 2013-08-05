@@ -27,5 +27,6 @@ position: relative;
 }
 
 .plus-minus-button {
-	width: 100px
+	width: 10px;
+	float:inherit;
 }
