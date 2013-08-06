@@ -36,7 +36,6 @@ $(document).ready(function () {
             $("#toc").toggle();
             $("#toc2").toggle();
         });
-
     });
     $("ul li").has("ul li")
         .prepend('<i class="icon-collapse"></i>')
@@ -69,14 +68,26 @@ $(document).ready(function () {
             $(this).next()
                 .toggle()}
     });
-    $(".icon-collapse").click(function(){
-       if ($(this).siblings('a').is('a',':visible')) {
+    $(".icon-collapse").on('click',function(){
+       if ($(this).next().next().is(':visible')) {
           $(this).css('color','green')
-          console.log($(this).next().is("a"))
-       } else  if ($(this).siblings().is(':visible')){
+          $(this).toggleClass('open')
+          alert('9I BZLoMAL TBOI COMP')
+          alert('MEXEXEXEXEXE')
+          alert('MEXEXEXEXEXE')
+          alert('MEXEXEXEXEXE')
+          alert('MEXEXEXEXEXE')
+          alert('MEXEXEXEXEXE')
+          alert('MEXEXEXEXEXE')
+          alert('MEXEXEXEXEXE')
+          alert('MEXEXEXEXEXE')
+          alert('MEXEXEXEXEXE')
+       } else  if ($(this).siblings().has('a').is(':visible')){
           $(this).css('color','blue')
+          $(this).toggleClass('open')
        } else {
         $(this).css('color','red')
+        $(this).toggleClass('open')
        }
     });
 });

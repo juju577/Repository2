@@ -26,7 +26,9 @@ position: relative;
 	border-radius: 2px;
 }
 
-.plus-minus-button {
-	width: 10px;
-	float:inherit;
+.icon-collapse{
+	display: inline-block;
 }
+.open {
+-webkit-transform: rotate(270deg);
+};
