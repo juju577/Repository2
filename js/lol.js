@@ -72,16 +72,6 @@ $(document).ready(function () {
        if ($(this).next().next().is(':visible')) {
           $(this).css('color','green')
           $(this).toggleClass('open')
-          alert('9I BZLoMAL TBOI COMP')
-          alert('MEXEXEXEXEXE')
-          alert('MEXEXEXEXEXE')
-          alert('MEXEXEXEXEXE')
-          alert('MEXEXEXEXEXE')
-          alert('MEXEXEXEXEXE')
-          alert('MEXEXEXEXEXE')
-          alert('MEXEXEXEXEXE')
-          alert('MEXEXEXEXEXE')
-          alert('MEXEXEXEXEXE')
        } else  if ($(this).siblings().has('a').is(':visible')){
           $(this).css('color','blue')
           $(this).toggleClass('open')
