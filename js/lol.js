@@ -40,14 +40,14 @@ $(document).ready(function () {
     $("ul li").has("ul li")
         .prepend('<i class="icon-collapse"></i>')
     $("#one").click(function () {
-        $("ul li ul").hide("hide");
+        $("ul li ul").hide();
+        $(".icon-collapse").addClass('open')
     });
     $("#two").click(function () {
-        $("ul li ul").show("hide");
-        $("#two").addClass
+        $("ul li ul").show();
+        $(".icon-collapse").removeClass('open')
     });
-    $("#one").mouseenter(function () {
-        $("#one").addClass("hightlight")
+    $("#one").mouseenter(function () {$("#one").addClass("hightlight")
     });
     $("#two").mouseenter(function () {
         $("#two").addClass("hightlight")
@@ -70,13 +70,10 @@ $(document).ready(function () {
     });
     $(".icon-collapse").on('click',function(){
        if ($(this).next().next().is(':visible')) {
-          $(this).css('color','green')
           $(this).toggleClass('open')
        } else  if ($(this).siblings().has('a').is(':visible')){
-          $(this).css('color','blue')
           $(this).toggleClass('open')
        } else {
-        $(this).css('color','red')
         $(this).toggleClass('open')
        }
     });

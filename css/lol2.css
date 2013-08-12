@@ -1,34 +1,38 @@
 #button {
-	color:red;
-	width: 200px;
-	height: 20px;
-	border:1px solid blue;
+    color:red;
+    width: 200px;
+    height: 20px;
+    border:1px solid blue;
 }
-
 #one {
-width: 175px;
-height:26px;
-text-align: center;
-color: #0088cc;
-position: relative;
+    width: 175px;
+    height:26px;
+    text-align: center;
+    color: #0088cc;
+    position: relative;
 }
-
 #two {
-width: 175px;
-height:26px;
-text-align: center;
-color: #0088cc;
-position: relative;
+    width: 175px;
+    height:26px;
+    text-align: center;
+    color: #0088cc;
+    position: relative;
 }
-
-.hightlight{
-	background-color: #eeeeee;
-	border-radius: 2px;
+.hightlight {
+    background-color: #eeeeee;
+    border-radius: 2px;
 }
-
-.icon-collapse{
-	display: inline-block;
+.icon-collapse {
+    -webkit-transform: scale(1.2, 1.2);
+    margin-right:5px;
 }
 .open {
--webkit-transform: rotate(270deg);
-};
+    -webkit-transform: rotate(270deg) scale(1.2, 1.2);
+    margin-right:5px;
+}
+ ul {
+    list-style: none;
+}
+li {
+    list-style: none;
+}
